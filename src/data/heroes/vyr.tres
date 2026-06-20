@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="HeroData" format=3 uid="uid://rjdk23xsv8jh"]
+
+[ext_resource type="Script" uid="uid://cyb2lfxuscrkx" path="res://src/data/classes/hero_data.gd" id="1_7uiju"]
+
+[resource]
+script = ExtResource("1_7uiju")
+display_name = "HERO_VYR_NAME"
+biography = "HERO_VYR_BIO"
+loved_food_tags = Array[String](["elven"])
+hated_food_tags = Array[String](["raw"])
+metadata/_custom_type_script = "uid://cyb2lfxuscrkx"

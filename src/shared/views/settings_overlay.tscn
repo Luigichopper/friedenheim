@@ -61,9 +61,9 @@ horizontal_alignment = 1
 [node name="LanguageDropdown Dropdown" type="OptionButton" parent="Background/MarginContainer/PanelContainer/SettingOptionsContainer/MarginContainer/VBoxContainer2" unique_id=2045488805]
 layout_mode = 2
 item_count = 2
-popup/item_0/text = "MENU_LANGUAGE_EN"
+popup/item_0/text = "English"
 popup/item_0/id = 0
-popup/item_1/text = "MENU_LANGUAGE_JP"
+popup/item_1/text = "日本語"
 popup/item_1/id = 1
 
 [node name="LabelSpacer" type="Control" parent="Background/MarginContainer/PanelContainer/SettingOptionsContainer/MarginContainer/VBoxContainer2" unique_id=1774845846]

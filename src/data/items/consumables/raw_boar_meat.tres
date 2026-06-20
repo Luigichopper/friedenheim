@@ -5,7 +5,8 @@
 
 [resource]
 script = ExtResource("1_r3dim")
-item_name = "Raw Boar Meat"
-lore_description = "The edible meat of a Boar; cooking it may reduce the chance of sickness and increase nutrition"
+item_name = "ITEM_RAW_BOAR_MEAT_NAME"
+lore_description = "ITEM_RAW_BOAR_MEAT_DESC"
 icon = ExtResource("1_agxjd")
+dietary_tags = Array[String](["meat", "raw"])
 metadata/_custom_type_script = "uid://d3bac2qs0kthl"

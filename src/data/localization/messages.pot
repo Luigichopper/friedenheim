@@ -58,5 +58,9 @@ msgid "MENU_BGM_VOLUME"
 msgstr ""
 
 #: src/shared/views/settings_overlay.tscn
+msgid "MENU_FULLSCREEN_TOGGLE"
+msgstr ""
+
+#: src/shared/views/settings_overlay.tscn
 msgid "MENU_CLOSE"
 msgstr ""

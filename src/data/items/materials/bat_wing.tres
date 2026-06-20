@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bj21vtvvuq1kx"]
+
+[ext_resource type="Script" uid="uid://d3bac2qs0kthl" path="res://src/data/classes/item_data.gd" id="1_gs2w2"]
+
+[resource]
+script = ExtResource("1_gs2w2")
+item_name = "ITEM_BAT_WING_NAME"
+lore_description = "ITEM_BAT_WING_DESC"
+item_type = 3
+metadata/_custom_type_script = "uid://d3bac2qs0kthl"

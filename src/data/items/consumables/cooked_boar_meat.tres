@@ -5,9 +5,10 @@
 
 [resource]
 script = ExtResource("1_um57w")
-item_name = "ITEM_RAW_BOAR_MEAT_NAME"
-lore_description = "ITEM_RAW_BOAR_MEAT_DESC
+item_name = "ITEM_COOKED_BOAR_MEAT_NAME"
+lore_description = "ITEM_COOKED_BOAR_MEAT_DESC
 "
 icon = ExtResource("1_opbdw")
 base_value = 20
+dietary_tags = Array[String](["meat", "cooked"])
 metadata/_custom_type_script = "uid://d3bac2qs0kthl"

@@ -1,3 +1,4 @@
+# res://src/autoloads/config_manager.gd
 extends Node
 
 const CONFIG_PATH = "user://config.cfg"

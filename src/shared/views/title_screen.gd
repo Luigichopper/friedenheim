@@ -1,3 +1,4 @@
+# res://src/shared/views/title_screen.gd
 extends Control
 
 # Node References

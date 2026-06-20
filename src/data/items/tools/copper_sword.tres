@@ -5,8 +5,8 @@
 
 [resource]
 script = ExtResource("1_x8670")
-item_name = "Copper Sword"
-lore_description = "A slightly oxidized copper sword; it's basic but effective"
+item_name = "ITEM_COPPER_SWORD_NAME"
+lore_description = "ITEM_COPPER_SWORD_DESC"
 icon = ExtResource("1_v6ues")
 item_type = 2
 base_value = 5

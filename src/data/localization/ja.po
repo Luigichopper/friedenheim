@@ -63,5 +63,9 @@ msgid "MENU_BGM_VOLUME"
 msgstr "BGM音量"
 
 #: src/shared/views/settings_overlay.tscn
+msgid "MENU_FULLSCREEN_TOGGLE"
+msgstr "フルスクリーンモード"
+
+#: src/shared/views/settings_overlay.tscn
 msgid "MENU_CLOSE"
 msgstr "閉じる"

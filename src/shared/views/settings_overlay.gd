@@ -1,5 +1,7 @@
+# res://src/shared/views/settings_overlay.gd
 extends CanvasLayer
 
+# Node References
 @onready var language_dropdown: OptionButton = $"Background/MarginContainer/PanelContainer/SettingOptionsContainer/MarginContainer/VBoxContainer2/LanguageDropdown Dropdown"
 @onready var bgm_volume_slider: HSlider = $Background/MarginContainer/PanelContainer/SettingOptionsContainer/MarginContainer/VBoxContainer2/BGMVolumeSlider
 @onready var sfx_volume_slider: HSlider = $Background/MarginContainer/PanelContainer/SettingOptionsContainer/MarginContainer/VBoxContainer2/SFXVolumeSlider

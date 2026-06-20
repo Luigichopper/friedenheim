@@ -5,9 +5,10 @@
 
 [resource]
 script = ExtResource("1_j0ic4")
-item_name = "Lembas"
-lore_description = "A very nutritional wafer originated in the Elven Lands."
+item_name = "ITEM_LEMBAS_NAME"
+lore_description = "ITEM_LEMBAS_DESC"
 icon = ExtResource("1_ot2pc")
 item_rarity = 3
 base_value = 35
+dietary_tags = Array[String](["vegetarian", "elven"])
 metadata/_custom_type_script = "uid://d3bac2qs0kthl"

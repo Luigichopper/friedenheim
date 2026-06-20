@@ -1,4 +1,4 @@
-# res://src/data/item_data.gd
+# res://src/data/classes/item_data.gd
 extends Resource
 class_name ItemData
 
@@ -14,3 +14,8 @@ enum Rarity { COMMON, UNCOMMON, RARE, EPIC, LEGENDARY }
 @export var item_type: Type = Type.CONSUMABLE
 @export var item_rarity: Rarity = Rarity.COMMON
 @export var base_value: int = 10
+@export var weight: float = 1.0
+
+@export_group("Dietary Profiling")
+## Examples: ["meat", "raw"], ["vegetarian", "elven"], ["cooked"]
+@export var dietary_tags: Array[String] = []
