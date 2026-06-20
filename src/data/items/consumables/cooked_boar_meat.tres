@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bfqesa13htf03"]
+
+[ext_resource type="Texture2D" uid="uid://c7l68yrawyufh" path="res://assets/textures/test/cooked_boar_meat.png" id="1_opbdw"]
+[ext_resource type="Script" uid="uid://d3bac2qs0kthl" path="res://src/data/classes/item_data.gd" id="1_um57w"]
+
+[resource]
+script = ExtResource("1_um57w")
+item_name = "ITEM_RAW_BOAR_MEAT_NAME"
+lore_description = "ITEM_RAW_BOAR_MEAT_DESC
+"
+icon = ExtResource("1_opbdw")
+base_value = 20
+metadata/_custom_type_script = "uid://d3bac2qs0kthl"

@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://dm26rbx8rtfrc"]
+
+[ext_resource type="Script" uid="uid://bajwch5yx1kb3" path="res://src/shared/views/title_screen.gd" id="1_5rscd"]
+[ext_resource type="Texture2D" uid="uid://dwgfabs5cv376" path="res://assets/textures/test/stock_background_test.jpg" id="2_2nakw"]
+[ext_resource type="AudioStream" uid="uid://rfwfv51hh13m" path="res://assets/audio/bgm/another_test_bgm.ogg" id="3_2nakw"]
+
+[node name="TitleScreen" type="Control" unique_id=594460]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5rscd")
+
+[node name="BackgroundTexture" type="TextureRect" parent="." unique_id=2109791848]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2nakw")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1537750859]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="MainLayout" type="HBoxContainer" parent="MarginContainer" unique_id=669631772]
+propagate_maximum_size = false
+layout_mode = 2
+
+[node name="LeftSpacer" type="Control" parent="MarginContainer/MainLayout" unique_id=25709747]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MenuPanel" type="VBoxContainer" parent="MarginContainer/MainLayout" unique_id=435659315]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/MainLayout/MenuPanel" unique_id=26574425]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "MENU_TITLE"
+
+[node name="ButtonSpacer" type="Control" parent="MarginContainer/MainLayout/MenuPanel" unique_id=1420847886]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="ButtonCluster" type="VBoxContainer" parent="MarginContainer/MainLayout/MenuPanel" unique_id=90622450]
+layout_mode = 2
+
+[node name="StoryModeButton" type="Button" parent="MarginContainer/MainLayout/MenuPanel/ButtonCluster" unique_id=472484895]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "MENU_STORY_MODE"
+
+[node name="InfiniteModeButton" type="Button" parent="MarginContainer/MainLayout/MenuPanel/ButtonCluster" unique_id=1625061831]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "MENU_INFINITE_MODE"
+
+[node name="SettingsButton" type="Button" parent="MarginContainer/MainLayout/MenuPanel/ButtonCluster" unique_id=1426427711]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "MENU_SETTINGS"
+
+[node name="ExitGameButton" type="Button" parent="MarginContainer/MainLayout/MenuPanel/ButtonCluster" unique_id=1347120282]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "MENU_EXIT_GAME"
+
+[node name="VersionLabel" type="Label" parent="." unique_id=979199630]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "v0.1.0-dev.1"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=905230037]
+position = Vector2(512, 512)
+scale = Vector2(512, 512)
+stream = ExtResource("3_2nakw")
+volume_db = -4.0
+autoplay = true
+max_distance = 4096.0
+bus = &"BGM"
+parameters/looping = true

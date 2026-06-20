@@ -1,0 +1,62 @@
+# LANGUAGE translation for Friedenheim for the following files:
+# res://src/shared/views/title_screen.tscn
+# res://src/shared/views/settings_overlay.tscn
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Friedenheim\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: src/shared/views/title_screen.tscn
+msgid "MENU_TITLE"
+msgstr ""
+
+#: src/shared/views/title_screen.tscn
+msgid "MENU_STORY_MODE"
+msgstr ""
+
+#: src/shared/views/title_screen.tscn
+msgid "MENU_INFINITE_MODE"
+msgstr ""
+
+#: src/shared/views/title_screen.tscn
+#: src/shared/views/settings_overlay.tscn
+msgid "MENU_SETTINGS"
+msgstr ""
+
+#: src/shared/views/title_screen.tscn
+msgid "MENU_EXIT_GAME"
+msgstr ""
+
+#: src/shared/views/title_screen.tscn
+msgid "v0.1.0-dev.1"
+msgstr ""
+
+#: src/shared/views/settings_overlay.tscn
+msgid "MENU_LANGUAGE"
+msgstr ""
+
+#: src/shared/views/settings_overlay.tscn
+msgid "MENU_LANGUAGE_EN"
+msgstr ""
+
+#: src/shared/views/settings_overlay.tscn
+msgid "MENU_LANGUAGE_JP"
+msgstr ""
+
+#: src/shared/views/settings_overlay.tscn
+msgid "MENU_SFX_VOLUME"
+msgstr ""
+
+#: src/shared/views/settings_overlay.tscn
+msgid "MENU_BGM_VOLUME"
+msgstr ""
+
+#: src/shared/views/settings_overlay.tscn
+msgid "MENU_CLOSE"
+msgstr ""

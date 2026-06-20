@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dkmc0ronapac6"]
+
+[ext_resource type="Texture2D" uid="uid://c1bwy6lj6eye4" path="res://assets/textures/test/raw_boar_meat.png" id="1_agxjd"]
+[ext_resource type="Script" uid="uid://d3bac2qs0kthl" path="res://src/data/classes/item_data.gd" id="1_r3dim"]
+
+[resource]
+script = ExtResource("1_r3dim")
+item_name = "Raw Boar Meat"
+lore_description = "The edible meat of a Boar; cooking it may reduce the chance of sickness and increase nutrition"
+icon = ExtResource("1_agxjd")
+metadata/_custom_type_script = "uid://d3bac2qs0kthl"

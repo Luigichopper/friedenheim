@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://ivcffpk0be68"]
+
+[ext_resource type="Script" uid="uid://d3bac2qs0kthl" path="res://src/data/classes/item_data.gd" id="1_j0ic4"]
+[ext_resource type="Texture2D" uid="uid://cp0hlcghj4c4x" path="res://assets/textures/test/lembas.png" id="1_ot2pc"]
+
+[resource]
+script = ExtResource("1_j0ic4")
+item_name = "Lembas"
+lore_description = "A very nutritional wafer originated in the Elven Lands."
+icon = ExtResource("1_ot2pc")
+item_rarity = 3
+base_value = 35
+metadata/_custom_type_script = "uid://d3bac2qs0kthl"
