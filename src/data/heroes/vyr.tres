@@ -4,8 +4,9 @@
 
 [resource]
 script = ExtResource("1_7uiju")
-display_name = "HERO_VYR_NAME"
-biography = "HERO_VYR_BIO"
-loved_food_tags = Array[String](["elven"])
-hated_food_tags = Array[String](["raw"])
+hero_name = "HERO_VYR_NAME"
+lore_description = "HERO_VYR_DESC"
+hero_class = 2
+dietary_likes = Array[String](["elven", "vegetarian"])
+dietary_dislikes = Array[String](["raw"])
 metadata/_custom_type_script = "uid://cyb2lfxuscrkx"

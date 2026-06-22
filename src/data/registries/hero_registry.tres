@@ -14,8 +14,10 @@ _scan_rulesets = Array[Dictionary]([{
 &"scan_regex_include": ""
 }])
 _uids_to_string_ids = Dictionary[StringName, StringName]({
+&"uid://b4qo4boqc6jk6": &"eisen",
 &"uid://rjdk23xsv8jh": &"vyr"
 })
 _string_ids_to_uids = Dictionary[StringName, StringName]({
+&"eisen": &"uid://b4qo4boqc6jk6",
 &"vyr": &"uid://rjdk23xsv8jh"
 })

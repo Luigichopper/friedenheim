@@ -2,10 +2,10 @@
 extends Control
 
 # Node References
-@onready var story_mode_button: Button = $MarginContainer/MainLayout/MenuPanel/ButtonCluster/StoryModeButton
-@onready var infinite_mode_button: Button = $MarginContainer/MainLayout/MenuPanel/ButtonCluster/InfiniteModeButton
-@onready var settings_button: Button = $MarginContainer/MainLayout/MenuPanel/ButtonCluster/SettingsButton
-@onready var exit_game_button: Button = $MarginContainer/MainLayout/MenuPanel/ButtonCluster/ExitGameButton
+@onready var story_mode_button: Button = %StoryModeButton
+@onready var infinite_mode_button: Button = %InfiniteModeButton
+@onready var settings_button: Button = %SettingsButton
+@onready var exit_game_button: Button = %ExitGameButton
 @onready var version_label: Label = $VersionLabel
 
 func _ready() -> void:

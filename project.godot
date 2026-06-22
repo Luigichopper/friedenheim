@@ -25,8 +25,8 @@ buses/default_bus_layout="uid://c01x3prldpupy"
 
 [autoload]
 
-GameManager="*uid://qf8nfoh2krbi"
 ConfigManager="*uid://dn5hq8dah2i8i"
+GameManager="*uid://qf8nfoh2krbi"
 
 [display]
 
@@ -34,7 +34,7 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/aseprite_spritesheet_importer/plugin.cfg", "res://addons/yard/plugin.cfg")
+enabled=PackedStringArray("res://addons/yard/plugin.cfg")
 
 [importer_defaults]
 

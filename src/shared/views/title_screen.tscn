@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bajwch5yx1kb3" path="res://src/shared/views/title_screen.gd" id="1_5rscd"]
 [ext_resource type="Texture2D" uid="uid://dwgfabs5cv376" path="res://assets/textures/ui/stock_background_test.jpg" id="2_2nakw"]
 [ext_resource type="AudioStream" uid="uid://rfwfv51hh13m" path="res://assets/audio/bgm/another_test_bgm.ogg" id="3_2nakw"]
+[ext_resource type="PackedScene" uid="uid://bfw2ycj64wagg" path="res://src/debug/hero_debug_screen.tscn" id="4_p11fg"]
 
 [node name="TitleScreen" type="Control" unique_id=594460]
 layout_mode = 3
@@ -60,21 +61,25 @@ size_flags_vertical = 4
 layout_mode = 2
 
 [node name="StoryModeButton" type="Button" parent="MarginContainer/MainLayout/MenuPanel/ButtonCluster" unique_id=472484895]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "MENU_STORY_MODE"
 
 [node name="InfiniteModeButton" type="Button" parent="MarginContainer/MainLayout/MenuPanel/ButtonCluster" unique_id=1625061831]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "MENU_INFINITE_MODE"
 
 [node name="SettingsButton" type="Button" parent="MarginContainer/MainLayout/MenuPanel/ButtonCluster" unique_id=1426427711]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "MENU_SETTINGS"
 
 [node name="ExitGameButton" type="Button" parent="MarginContainer/MainLayout/MenuPanel/ButtonCluster" unique_id=1347120282]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "MENU_EXIT_GAME"
@@ -101,3 +106,7 @@ autoplay = true
 max_distance = 4096.0
 bus = &"BGM"
 parameters/looping = true
+
+[node name="HeroDebugScreen" parent="." unique_id=714362313 instance=ExtResource("4_p11fg")]
+visible = false
+layout_mode = 1
