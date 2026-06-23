@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://bajwch5yx1kb3" path="res://src/shared/views/title_screen.gd" id="1_5rscd"]
 [ext_resource type="Texture2D" uid="uid://dwgfabs5cv376" path="res://assets/textures/ui/stock_background_test.jpg" id="2_2nakw"]
 [ext_resource type="AudioStream" uid="uid://rfwfv51hh13m" path="res://assets/audio/bgm/another_test_bgm.ogg" id="3_2nakw"]
-[ext_resource type="PackedScene" uid="uid://bfw2ycj64wagg" path="res://src/debug/hero_debug_screen.tscn" id="4_p11fg"]
 
 [node name="TitleScreen" type="Control" unique_id=594460]
 layout_mode = 3
@@ -101,12 +100,7 @@ text = "v0.1.0-dev.1"
 position = Vector2(512, 512)
 scale = Vector2(512, 512)
 stream = ExtResource("3_2nakw")
-volume_db = -4.0
 autoplay = true
 max_distance = 4096.0
 bus = &"BGM"
 parameters/looping = true
-
-[node name="HeroDebugScreen" parent="." unique_id=714362313 instance=ExtResource("4_p11fg")]
-visible = false
-layout_mode = 1

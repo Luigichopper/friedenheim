@@ -6,4 +6,9 @@
 script = ExtResource("1_amd7o")
 display_name = "ENEMY_BOAR_NAME"
 description = "ENEMY_BOAR_DESC"
+base_attack = 14
+base_speed = 7
+guaranteed_drops = Array[StringName]([&"uid://k6d6mawyd47j", &"uid://k6d6mawyd47j", &"uid://dkmc0ronapac6"])
+chance_drop_pool = Array[StringName]([&"uid://dkmc0ronapac6"])
+chance_drop_rate = 0.5
 metadata/_custom_type_script = "uid://byywxiryqgp2b"

@@ -58,7 +58,8 @@ theme_override_font_sizes/font_size = 24
 text = "MENU_LANGUAGE"
 horizontal_alignment = 1
 
-[node name="LanguageDropdown Dropdown" type="OptionButton" parent="Background/MarginContainer/PanelContainer/SettingOptionsContainer/MarginContainer/VBoxContainer2" unique_id=2045488805]
+[node name="LanguageDropdown" type="OptionButton" parent="Background/MarginContainer/PanelContainer/SettingOptionsContainer/MarginContainer/VBoxContainer2" unique_id=2045488805]
+unique_name_in_owner = true
 layout_mode = 2
 item_count = 2
 popup/item_0/text = "English"
@@ -76,6 +77,7 @@ text = "MENU_SFX_VOLUME"
 horizontal_alignment = 1
 
 [node name="SFXVolumeSlider" type="HSlider" parent="Background/MarginContainer/PanelContainer/SettingOptionsContainer/MarginContainer/VBoxContainer2" unique_id=1486108399]
+unique_name_in_owner = true
 layout_mode = 2
 max_value = 1.0
 step = 0.05
@@ -87,6 +89,7 @@ text = "MENU_BGM_VOLUME"
 horizontal_alignment = 1
 
 [node name="BGMVolumeSlider" type="HSlider" parent="Background/MarginContainer/PanelContainer/SettingOptionsContainer/MarginContainer/VBoxContainer2" unique_id=1188979597]
+unique_name_in_owner = true
 layout_mode = 2
 max_value = 1.0
 step = 0.05
@@ -95,6 +98,7 @@ step = 0.05
 layout_mode = 2
 
 [node name="FullscreenToggle" type="CheckButton" parent="Background/MarginContainer/PanelContainer/SettingOptionsContainer/MarginContainer/VBoxContainer2" unique_id=25218825]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "MENU_FULLSCREEN_TOGGLE"
@@ -115,6 +119,7 @@ theme_override_constants/margin_right = 16
 layout_mode = 2
 
 [node name="CloseButton" type="Button" parent="Background/MarginContainer/PanelContainer/CloseButtonContainer/MarginContainer/VBoxContainer" unique_id=183156978]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "MENU_CLOSE"

@@ -74,16 +74,6 @@ func set_mood(new_mood: Mood, reason: String = "") -> void:
 ## goes in the one slot matching its type." item_id must be the same string
 ## id the item is registered under in the YARD item registry — callers should
 ## pass this through from their registry lookup, not derive it here.
-func equip(item_id: StringName, item: ItemData) -> bool:
-	match item.item_type:
-		ItemData.Type.WEAPON:
-			equipped_weapon_id = item_id
-			return true
-		ItemData.Type.ARMOR:
-			equipped_armor_id = item_id
-			return true
-		_:
-			return false
 
 
 func unequip_weapon() -> void:

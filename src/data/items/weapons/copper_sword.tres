@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3 uid="uid://b5dwyk5caqxxp"]
+
+[ext_resource type="Script" uid="uid://bhog0he3rcpcu" path="res://src/data/classes/item_data/weapon_data.gd" id="1_14pjk"]
+[ext_resource type="Texture2D" uid="uid://btxjkwdkte0hb" path="res://assets/textures/test/copper_sword.png" id="1_v6ues"]
+
+[resource]
+script = ExtResource("1_14pjk")
+allowed_hero_classes = Array[int]([0])
+item_name = "ITEM_COPPER_SWORD_NAME"
+icon = ExtResource("1_v6ues")
+metadata/_custom_type_script = "uid://bhog0he3rcpcu"

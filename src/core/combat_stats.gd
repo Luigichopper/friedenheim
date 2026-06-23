@@ -38,8 +38,7 @@ static func get_effective_attack(hero: HeroData, weapon: ItemData, mood: HeroSta
 	var mood_scaled_base := roundi(hero.base_attack * get_mood_multiplier(mood))
 
 	var gear_bonus := 0
-	if weapon != null and weapon.item_type == ItemData.Type.WEAPON:
-		gear_bonus = weapon.power_value
+
 
 	return mood_scaled_base + gear_bonus
 
@@ -49,7 +48,6 @@ static func get_effective_defense(hero: HeroData, armor: ItemData, mood: HeroSta
 	var mood_scaled_base := roundi(hero.base_defense * get_mood_multiplier(mood))
 
 	var gear_bonus := 0
-	if armor != null and armor.item_type == ItemData.Type.ARMOR:
-		gear_bonus = armor.power_value
+
 
 	return mood_scaled_base + gear_bonus

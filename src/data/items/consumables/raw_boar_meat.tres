@@ -1,12 +1,12 @@
-[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dkmc0ronapac6"]
+[gd_resource type="Resource" script_class="ConsumableData" format=3 uid="uid://bfsqodih6ywml"]
 
+[ext_resource type="Script" uid="uid://bfsuggcivl8yt" path="res://src/data/classes/item_data/consumable_data.gd" id="1_1i8i8"]
 [ext_resource type="Texture2D" uid="uid://c1bwy6lj6eye4" path="res://assets/textures/test/raw_boar_meat.png" id="1_agxjd"]
-[ext_resource type="Script" uid="uid://d3bac2qs0kthl" path="res://src/data/classes/item_data.gd" id="1_r3dim"]
 
 [resource]
-script = ExtResource("1_r3dim")
+script = ExtResource("1_1i8i8")
+saturation_value = 5
+dietary_tags = Array[String](["raw", "meat", "plain"])
 item_name = "ITEM_RAW_BOAR_MEAT_NAME"
-lore_description = "ITEM_RAW_BOAR_MEAT_DESC"
 icon = ExtResource("1_agxjd")
-dietary_tags = Array[String](["meat", "raw"])
-metadata/_custom_type_script = "uid://d3bac2qs0kthl"
+metadata/_custom_type_script = "uid://bfsuggcivl8yt"

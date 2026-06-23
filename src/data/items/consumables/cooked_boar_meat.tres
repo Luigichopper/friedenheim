@@ -1,14 +1,11 @@
-[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bfqesa13htf03"]
+[gd_resource type="Resource" script_class="ConsumableData" format=3 uid="uid://0l2h7634poa8"]
 
+[ext_resource type="Script" uid="uid://bfsuggcivl8yt" path="res://src/data/classes/item_data/consumable_data.gd" id="1_j4b08"]
 [ext_resource type="Texture2D" uid="uid://c7l68yrawyufh" path="res://assets/textures/test/cooked_boar_meat.png" id="1_opbdw"]
-[ext_resource type="Script" uid="uid://d3bac2qs0kthl" path="res://src/data/classes/item_data.gd" id="1_um57w"]
 
 [resource]
-script = ExtResource("1_um57w")
+script = ExtResource("1_j4b08")
+dietary_tags = Array[String](["meat", "plain"])
 item_name = "ITEM_COOKED_BOAR_MEAT_NAME"
-lore_description = "ITEM_COOKED_BOAR_MEAT_DESC
-"
 icon = ExtResource("1_opbdw")
-base_value = 20
-dietary_tags = Array[String](["meat", "cooked"])
-metadata/_custom_type_script = "uid://d3bac2qs0kthl"
+metadata/_custom_type_script = "uid://bfsuggcivl8yt"

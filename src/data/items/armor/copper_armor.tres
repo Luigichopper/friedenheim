@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ArmorData" format=3 uid="uid://bamlpj36ngx0m"]
+
+[ext_resource type="Texture2D" uid="uid://52ur0gv6g25p" path="res://assets/textures/test/empty_debug_texture.png" id="1_7ijqh"]
+[ext_resource type="Script" uid="uid://c2xbu5ex36046" path="res://src/data/classes/item_data/armor_data.gd" id="1_ok1le"]
+
+[resource]
+script = ExtResource("1_ok1le")
+item_name = "ITEM_COPPER_ARMOR_NAME"
+icon = ExtResource("1_7ijqh")
+metadata/_custom_type_script = "uid://c2xbu5ex36046"
