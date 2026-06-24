@@ -6,5 +6,6 @@
 [resource]
 script = ExtResource("1_c7ckt")
 item_name = "ITEM_BAT_WING_NAME"
+lore_description = "ITEM_BAT_WING_DESC"
 icon = ExtResource("1_ann7y")
 metadata/_custom_type_script = "uid://bjq46yi7j31kk"

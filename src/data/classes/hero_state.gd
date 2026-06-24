@@ -3,9 +3,15 @@ extends Resource
 class_name HeroState
 
 ## Mutable, per-save runtime state for a single hero instance. This is what
-## actually gets saved/loaded and changed during play. It never holds a direct
-## reference to a HeroData object — only the string id — so it stays small,
-## save-safe, and immune to going stale if HeroData is edited later.
+## actually gets saved/loaded between runs. It never holds a direct reference
+## to a HeroData object — only the string id — so it stays small, save-safe,
+## and immune to going stale if HeroData is edited later.
+##
+## Deliberately does NOT track anything that only exists mid-run (active
+## status effects, current target, turn counters, etc.) — that's RunState's
+## job, and RunState is never saved. By the time a run ends, every mid-run
+## detail has already resolved into a change to the fields below (HP lost,
+## XP gained, loot committed) or been discarded entirely (on death).
 ##
 ## Usage: var template := HeroRegistryHelper.get_hero_data(state.hero_id)
 
@@ -33,7 +39,10 @@ enum Mood { HAPPY, NEUTRAL, SAD, UPSET }
 ## not used in any matching logic.
 @export var mood_reason: String = ""
 
-@export_group("Combat State")
+@export_group("Persistent Health")
+## Does NOT regenerate between runs. Must be restored via a paid heal
+## service or item use outside of a run. A hero embarking with low HP is a
+## real, visible risk the player chose to accept.
 @export var current_hp: int = 0
 @export var is_benched: bool = false
 ## Reason a hero is benched, e.g. "recovering from Wyvern Peak". Empty if not benched.
@@ -68,12 +77,19 @@ func set_mood(new_mood: Mood, reason: String = "") -> void:
 	mood_reason = reason
 
 
-## Equips an item into whichever slot matches its item_type. Returns false
-## (and equips nothing) if the item isn't a WEAPON or ARMOR — this is the
-## structural enforcement of "only weapons/armor can be equipped, and each
-## goes in the one slot matching its type." item_id must be the same string
-## id the item is registered under in the YARD item registry — callers should
-## pass this through from their registry lookup, not derive it here.
+## Equips an item into whichever slot matches its concrete type. Returns false
+## (and equips nothing) if the item is neither WeaponData nor ArmorData — this
+## is the structural enforcement of "only weapons/armor can be equipped, and
+## each goes in the one slot matching its type." item_id must be the same
+## string id the item is registered under in the YARD item registry.
+func equip(item_id: StringName, item: ItemData) -> bool:
+	if item is WeaponData:
+		equipped_weapon_id = item_id
+		return true
+	elif item is ArmorData:
+		equipped_armor_id = item_id
+		return true
+	return false
 
 
 func unequip_weapon() -> void:
@@ -82,3 +98,11 @@ func unequip_weapon() -> void:
 
 func unequip_armor() -> void:
 	equipped_armor_id = &""
+
+
+func take_damage(amount: int) -> void:
+	current_hp = max(0, current_hp - amount)
+
+
+func heal(amount: int, max_hp: int) -> void:
+	current_hp = min(max_hp, current_hp + amount)

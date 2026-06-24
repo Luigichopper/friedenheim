@@ -5,6 +5,9 @@
 
 [resource]
 script = ExtResource("1_iqvo3")
+attack_power = 7
+base_durability = 150
+allowed_hero_classes = Array[int]([0])
 item_name = "ITEM_IRON_SWORD_NAME"
 icon = ExtResource("1_2j4j0")
 metadata/_custom_type_script = "uid://bhog0he3rcpcu"

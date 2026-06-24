@@ -14,7 +14,7 @@ config/name="Friedenheim"
 config/name_localized={
 "ja": "フリーデンハイム"
 }
-config/version="0.0.0-dev.2"
+config/version="v0.1.0"
 run/main_scene="res://src/shared/views/title_screen.tscn"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="uid://crwya6wcrr5li"
@@ -27,6 +27,7 @@ buses/default_bus_layout="uid://c01x3prldpupy"
 
 ConfigManager="*uid://dn5hq8dah2i8i"
 GameManager="*uid://qf8nfoh2krbi"
+InventoryManager="*uid://dkwqutp3tbgxy"
 
 [display]
 

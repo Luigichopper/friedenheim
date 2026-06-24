@@ -7,5 +7,6 @@
 script = ExtResource("1_j4b08")
 dietary_tags = Array[String](["meat", "plain"])
 item_name = "ITEM_COOKED_BOAR_MEAT_NAME"
+lore_description = "ITEM_COOKED_BOAR_MEAT_DESC"
 icon = ExtResource("1_opbdw")
 metadata/_custom_type_script = "uid://bfsuggcivl8yt"

@@ -7,6 +7,7 @@
 script = ExtResource("2_u7ufn")
 dietary_tags = Array[String](["elven", "vegetable", "bread"])
 item_name = "ITEM_LEMBAS_NAME"
+lore_description = "ITEM_LEMBAS_DESC"
 icon = ExtResource("1_ot2pc")
 item_rarity = 2
 metadata/_custom_type_script = "uid://d3bac2qs0kthl"
