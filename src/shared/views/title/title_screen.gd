@@ -33,7 +33,7 @@ func _on_infinite_mode_pressed() -> void:
 
 func _on_settings_pressed() -> void:
 	# 1. Preload the settings visual scene file path
-	var settings_scene = preload("res://src/shared/views/settings_overlay.tscn")
+	var settings_scene = preload("res://src/shared/views/settings/settings_overlay.tscn")
 	
 	# 2. Instantiate a copy clone of it into a live node instance
 	var settings_instance = settings_scene.instantiate()

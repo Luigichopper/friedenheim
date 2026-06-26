@@ -74,7 +74,6 @@ func _on_item_selected(index: int) -> void:
 		stats_text += "Type: Armor\n"
 		stats_text += "DEF: %d\n" % d.defense_power
 		stats_text += "Durability: %d/%d\n" % [selected_slot.current_durability, d.base_durability]
-		stats_text += "Affinity Def: %s\n" % str(d.affinity_defense)
 		stats_text += "Classes: " + _format_classes(d.allowed_hero_classes)
 		
 	elif d is ConsumableData:

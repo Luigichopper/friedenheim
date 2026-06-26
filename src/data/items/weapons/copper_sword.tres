@@ -7,5 +7,7 @@
 script = ExtResource("1_14pjk")
 allowed_hero_classes = Array[int]([0])
 item_name = "ITEM_COPPER_SWORD_NAME"
+lore_description = "ITEM_COPPER_SWORD_DESC"
 icon = ExtResource("1_v6ues")
+base_durability = 150
 metadata/_custom_type_script = "uid://bhog0he3rcpcu"

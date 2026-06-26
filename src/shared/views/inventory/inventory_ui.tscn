@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b8x3k1r2p4q6y"]
 
-[ext_resource type="Script" uid="uid://ciak85a3uw5o1" path="res://src/shared/views/inventory_ui.gd" id="1_inventory_ui"]
-[ext_resource type="Script" uid="uid://oy4i3t37md63" path="res://src/shared/views/free_loot.gd" id="2_asm8p"]
+[ext_resource type="Script" uid="uid://ciak85a3uw5o1" path="res://src/shared/views/inventory/inventory_ui.gd" id="1_inventory_ui"]
+[ext_resource type="Script" uid="uid://oy4i3t37md63" path="res://src/shared/views/inventory/free_loot.gd" id="2_asm8p"]
 [ext_resource type="Resource" uid="uid://dtepvp48rrx1n" path="res://src/data/items/weapons/iron_sword.tres" id="3_k3xgu"]
 [ext_resource type="Resource" uid="uid://b5dwyk5caqxxp" path="res://src/data/items/weapons/copper_sword.tres" id="4_40k1t"]
 [ext_resource type="Resource" uid="uid://bfsqodih6ywml" path="res://src/data/items/consumables/raw_boar_meat.tres" id="4_lnimn"]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cq8mgxwq6vjra"]
 
-[ext_resource type="Script" uid="uid://d0qyu3rbvl07m" path="res://src/shared/views/settings_overlay.gd" id="1_01g12"]
+[ext_resource type="Script" uid="uid://d0qyu3rbvl07m" path="res://src/shared/views/settings/settings_overlay.gd" id="1_01g12"]
 
 [node name="SettingsOverlay" type="CanvasLayer" unique_id=71333145]
 script = ExtResource("1_01g12")

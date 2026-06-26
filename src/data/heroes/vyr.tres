@@ -6,7 +6,8 @@
 script = ExtResource("1_7uiju")
 hero_name = "HERO_VYR_NAME"
 lore_description = "HERO_VYR_DESC"
-hero_class = 2
+hero_class = 3
 dietary_likes = Array[String](["elven", "vegetarian"])
 dietary_dislikes = Array[String](["raw"])
+weapon_affinities = Array[int]([1])
 metadata/_custom_type_script = "uid://cyb2lfxuscrkx"

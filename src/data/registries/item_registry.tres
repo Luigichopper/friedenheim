@@ -18,7 +18,6 @@ _uids_to_string_ids = Dictionary[StringName, StringName]({
 &"uid://b3la47ubkmjx0": &"lembas",
 &"uid://b5dwyk5caqxxp": &"copper_sword",
 &"uid://b8mac7ioh8pyg": &"bat_wing",
-&"uid://bamlpj36ngx0m": &"copper_armor",
 &"uid://bfsqodih6ywml": &"raw_boar_meat",
 &"uid://cmpyrkrt53g32": &"minor_health_potion",
 &"uid://dtepvp48rrx1n": &"iron_sword",
@@ -27,7 +26,6 @@ _uids_to_string_ids = Dictionary[StringName, StringName]({
 _string_ids_to_uids = Dictionary[StringName, StringName]({
 &"bat_wing": &"uid://b8mac7ioh8pyg",
 &"cooked_boar_meat": &"uid://0l2h7634poa8",
-&"copper_armor": &"uid://bamlpj36ngx0m",
 &"copper_sword": &"uid://b5dwyk5caqxxp",
 &"elven_longbow": &"uid://w7wmt0l8ivup",
 &"iron_sword": &"uid://dtepvp48rrx1n",

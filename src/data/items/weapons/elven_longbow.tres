@@ -8,6 +8,7 @@ script = ExtResource("2_452js")
 attack_power = 8
 crit_rate = 0.07
 allowed_hero_classes = Array[int]([1])
+weapon_type = 2
 item_name = "ITEM_ELVEN_LONGBOW_NAME"
 lore_description = "ITEM_ELVEN_LONGBOW_DESC"
 icon = ExtResource("1_326qd")

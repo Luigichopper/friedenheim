@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="HeroData" format=3 uid="uid://d2qfkj6clh815"]
+
+[ext_resource type="Script" uid="uid://cyb2lfxuscrkx" path="res://src/data/classes/hero_data.gd" id="1_p8gp1"]
+
+[resource]
+script = ExtResource("1_p8gp1")
+hero_name = "HERO_WISE_NAME"
+lore_description = "HERO_WISE_DESC"
+weapon_affinities = Array[int]([0])
+metadata/_custom_type_script = "uid://cyb2lfxuscrkx"

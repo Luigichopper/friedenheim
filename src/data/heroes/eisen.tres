@@ -8,4 +8,5 @@ hero_name = "HERO_EISEN_NAME"
 lore_description = "HERO_EISEN_DESC"
 dietary_likes = Array[String](["meat", "cooked"])
 dietary_dislikes = Array[String](["raw"])
+weapon_affinities = Array[int]([2])
 metadata/_custom_type_script = "uid://cyb2lfxuscrkx"

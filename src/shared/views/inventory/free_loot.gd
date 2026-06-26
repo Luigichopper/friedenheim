@@ -9,6 +9,7 @@ extends Node
 func _ready() -> void:
 	# Give the player some items to test the system out!
 	InventoryManager.add_item(iron_sword)
+	InventoryManager.add_item(iron_sword)
 	InventoryManager.add_item(copper_sword)
 	InventoryManager.add_item(raw_boar_meat, 5)
 	InventoryManager.add_item(cooked_boar_meat, 7)
