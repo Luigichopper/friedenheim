@@ -7,4 +7,7 @@
 script = ExtResource("1_cj8bq")
 item_name = "ITEM_MINOR_HEALTH_POTION_NAME"
 icon = ExtResource("1_6r6q5")
+item_rarity = 1
+base_cost = 50
+weight = 0.23
 metadata/_custom_type_script = "uid://c72wj52gu1dpk"

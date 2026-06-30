@@ -4,7 +4,10 @@ class_name HeroData
 
 ## Authored, static definition of a hero. This is the "template" — YARD-registered,
 ## never mutated at runtime.
-enum HeroClass { SWORDSMAN, RANGER, CLERIC, MAGE } # Added MAGE for classic fantasy comps
+enum HeroClass { SWORDSMAN, RANGER, CLERIC, MAGE }
+
+enum ElementType { NONE, FIRE, WATER, EARTH, WIND, LIGHT, DARK }
+
 
 @export_group("Identity")
 @export var hero_name: String
@@ -22,22 +25,24 @@ enum HeroClass { SWORDSMAN, RANGER, CLERIC, MAGE } # Added MAGE for classic fant
 @export var base_defense: int = 5
 
 @export_group("Dietary Profiling")
-@export var dietary_likes: Array[String] = []
-@export var dietary_dislikes: Array[String] = []
+@export var dietary_likes: Array[ConsumableData.DietaryTag] = []
+@export var dietary_dislikes: Array[ConsumableData.DietaryTag] = []
 
 @export_group("Combat Affinities")
-## Tags describing what this hero is naturally good against/equipped for (e.g., ["ranged", "fire"]).
-@export var element_affinities: Array[String] = []
+@export var element_affinities: Array[ElementType] = []
 @export var weapon_affinities: Array[WeaponData.WeaponType] = []
 
 @export_group("Bond Skill Table")
 ## Maps bond rank (int) -> skill id (String).
-@export var skills_by_bond_rank: Dictionary = {}
+@export var skills_by_bond_rank: Dictionary[int, String] = {}
 
 ## Returns every skill id this hero has unlocked at or below the given rank.
 func get_unlocked_skill_ids(current_bond_rank: int) -> Array[String]:
 	var unlocked: Array[String] = []
-	for rank: int in skills_by_bond_rank.keys():
-		if rank <= current_bond_rank:
-			unlocked.append(skills_by_bond_rank[rank])
+	for rank in skills_by_bond_rank:
+		# Explicitly cast to int during the comparison if needed, 
+		# or let GDScript handle the variant matching safely
+		if int(rank) <= current_bond_rank:
+			# Ensure the payload is treated as a String
+			unlocked.append(str(skills_by_bond_rank[rank]))
 	return unlocked

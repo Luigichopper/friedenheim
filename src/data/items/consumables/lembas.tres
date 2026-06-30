@@ -5,9 +5,12 @@
 
 [resource]
 script = ExtResource("2_u7ufn")
-dietary_tags = Array[String](["elven", "vegetable", "bread"])
+saturation_value = 20
+dietary_tags = Array[int]([1, 5, 11])
 item_name = "ITEM_LEMBAS_NAME"
 lore_description = "ITEM_LEMBAS_DESC"
 icon = ExtResource("1_ot2pc")
 item_rarity = 2
+base_cost = 250
+weight = 0.05
 metadata/_custom_type_script = "uid://d3bac2qs0kthl"

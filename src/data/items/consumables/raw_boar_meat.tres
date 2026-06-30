@@ -6,7 +6,9 @@
 [resource]
 script = ExtResource("1_1i8i8")
 saturation_value = 5
-dietary_tags = Array[String](["raw", "meat", "plain"])
+dietary_tags = Array[int]([0, 2])
 item_name = "ITEM_RAW_BOAR_MEAT_NAME"
 icon = ExtResource("1_agxjd")
+base_cost = 5
+weight = 0.9
 metadata/_custom_type_script = "uid://bfsuggcivl8yt"

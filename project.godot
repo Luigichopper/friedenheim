@@ -26,6 +26,8 @@ buses/default_bus_layout="uid://c01x3prldpupy"
 [autoload]
 
 ConfigManager="*uid://dn5hq8dah2i8i"
+DB="*uid://rp03gnco27wd"
+SaveManager="*uid://1gns5qds144n"
 GameManager="*uid://qf8nfoh2krbi"
 InventoryManager="*uid://dkwqutp3tbgxy"
 
