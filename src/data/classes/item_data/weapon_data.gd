@@ -2,7 +2,7 @@
 extends ItemData
 class_name WeaponData
 
-enum WeaponType {LONGSWORD, SHORTSWORD, AXE, LONGBOW, CROSSBOW, GRIMOIRE, STAFF}
+enum WeaponType {LONGSWORD, BATTLEAXE, DAGGERS, SPEAR, SHORTBOW, LONGBOW, CROSSBOW, GRIMOIRE, STAFF}
 
 @export_group("Combat")
 @export var attack_power: int = 5

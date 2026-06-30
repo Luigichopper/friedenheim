@@ -10,5 +10,5 @@ lore_description = "HERO_WISE_DESC"
 portrait = ExtResource("1_0s5kq")
 dietary_likes = Array[int]([3])
 dietary_dislikes = Array[int]([0])
-weapon_affinities = Array[int]([0])
+weapon_affinities = Array[int]([1])
 metadata/_custom_type_script = "uid://cyb2lfxuscrkx"
