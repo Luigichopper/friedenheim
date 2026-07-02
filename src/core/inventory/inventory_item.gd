@@ -10,6 +10,7 @@ class_name InventoryItem
 @export_group("Dynamic State")
 ## Mutable attributes modifying this explicit item row instance
 @export var current_durability: int = 0
+var equipped_by_hero_name: String = ""
 
 
 ## Explicit wrapper to safely resolve underlying item properties from our DB autoload framework.
@@ -53,3 +54,18 @@ func matches_type(type_string: String) -> bool:
 		"potion": return d is PotionData
 		"material": return d is MaterialData
 		_: return false
+
+
+## Damages or repairs the item by a set number of ticks
+func modify_durability(amount: int) -> void:
+	var static_data = get_static_data()
+	if not static_data or not static_data.has_method("has_durability") or not static_data.has_durability():
+		return # Can't damage something that doesn't track durability
+		
+	var max_durability = static_data.base_durability if "base_durability" in static_data else 100
+	current_durability = clampi(current_durability + amount, 0, max_durability)
+
+
+## Quick check to see if the item is completely broken
+func is_broken() -> bool:
+	return current_durability <= 0

@@ -56,7 +56,6 @@ func _on_food_selected(index: int) -> void:
 func _on_feed_pressed() -> void:
 	var selected = %StashFoodList.get_selected_items()
 	if selected.is_empty(): return
-	
 	var item = %StashFoodList.get_item_metadata(selected[0]) as InventoryItem
 	if not item: return
 	var food_data = item.data as ConsumableData
@@ -67,9 +66,7 @@ func _on_feed_pressed() -> void:
 		if tag in base_hero.dietary_likes: hero.mood_morale = clampi(hero.mood_morale + 15, 0, 100)
 		elif tag in base_hero.dietary_dislikes: hero.mood_morale = clampi(hero.mood_morale - 20, 0, 100)
 		
-	for i in InventoryManager.stash:
-		if i.item_id == item.item_id:
-			i.quantity -= 1
-			if i.quantity <= 0: InventoryManager.stash.erase(i)
-			break
+	# FIXED: Cleanly routed deletion sequence through global InventoryManager 
+	InventoryManager.remove_item(item.item_id, 1)
+	
 	action_processed.emit()

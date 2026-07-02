@@ -81,6 +81,7 @@ func _on_item_selected(index: int) -> void:
 	var new_target_id = ""
 	
 	# Check if the player explicitly triggered the context-aware unequip command
+# Inside _on_item_selected() in equipment_tab.gd
 	if meta_instruction == "__UNEQUIP__":
 		if current_slot == -1:
 			unequipped_id = hero.equipped_weapon_id
@@ -88,7 +89,6 @@ func _on_item_selected(index: int) -> void:
 		else:
 			unequipped_id = hero.equip_armor_piece(current_slot, "")
 	else:
-		# Player selected a new item out of stash to allocate
 		new_target_id = meta_instruction
 		if current_slot == -1:
 			unequipped_id = hero.equipped_weapon_id
@@ -97,17 +97,10 @@ func _on_item_selected(index: int) -> void:
 			unequipped_id = hero.equip_armor_piece(current_slot, new_target_id)
 			
 		if new_target_id != "": 
-			_remove_one(new_target_id)
+			# FIXED: Routed through the unified InventoryManager pipeline
+			InventoryManager.remove_item(new_target_id, 1)
 			
 	if unequipped_id != "": 
 		InventoryManager.add_item(unequipped_id, 1)
 		
 	action_processed.emit()
-
-
-func _remove_one(id: String) -> void:
-	for item in InventoryManager.stash:
-		if item.item_id == id:
-			item.quantity -= 1
-			if item.quantity <= 0: InventoryManager.stash.erase(item)
-			break

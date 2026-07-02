@@ -38,8 +38,18 @@ func refresh_ui() -> void:
 	displayed_items = InventoryManager.get_items_by_category(current_category)
 	
 	for item in displayed_items:
+		if not item or not item.data: continue
+		
 		var display_text = item.data.item_name
-		if item.quantity > 1:
+		
+		# Append durability markers if applicable to weapons/armor/tools
+		if item.data.has_method("has_durability") and item.data.has_durability():
+			display_text += " [%d/%d]" % [item.current_durability, item.data.base_durability]
+		
+		# Append contextual assignment markers if item is attached to a hero body
+		if "equipped_by_hero_name" in item and item.equipped_by_hero_name != "":
+			display_text += " [Equipped by %s]" % item.equipped_by_hero_name
+		elif item.quantity > 1:
 			display_text += " (x%d)" % item.quantity
 			
 		item_list.add_item(display_text, item.data.icon)
