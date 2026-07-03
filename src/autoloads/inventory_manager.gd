@@ -31,6 +31,22 @@ func add_item(item_id: String, qty: int = 1) -> void:
 	inventory_updated.emit()
 
 
+## NEW: Optional dynamic_durability allows specific targeted removal of damaged items.
+func remove_item(item_id: String, qty: int = 1, dynamic_durability: int = -1) -> void:
+	for i in range(stash.size() - 1, -1, -1):
+		var item = stash[i]
+		if item.item_id == item_id:
+			# If we are looking for a specific durability match, skip mismatches
+			if dynamic_durability != -1 and item.current_durability != dynamic_durability:
+				continue
+				
+			item.quantity -= qty
+			if item.quantity <= 0:
+				stash.remove_at(i)
+			break
+			
+	inventory_updated.emit()
+
 
 ## UPDATED: Combines static vault storage + equipped hero weapons/armor items
 func get_items_by_category(category_name: String) -> Array[InventoryItem]:

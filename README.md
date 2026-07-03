@@ -27,3 +27,11 @@ The codebase follows a strict component-based separation of data structures, cor
 * **Engine:** Godot 4+ (GDScript)
 * **Database Rulesets:** YARD (Yet Another Registry Database)
 * **Localization Standards:** GNU gettext utilities
+
+---
+
+## 📝 Important Update
+* **7/3/2026:** A New Version Schema!
+From now on, each push to main will be will either be a new MINOR or PATCH update.
+v0.1.0 officially begins today, any future additions will be affecting x in v0.1.x.
+The new systems to be added, like the upcoming venture preparation, will be a MINOR update.

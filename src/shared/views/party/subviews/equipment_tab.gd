@@ -66,10 +66,12 @@ func _on_slot_clicked(slot_id: int) -> void:
 		if not d or inv_item.quantity <= 0: continue
 		
 		if slot_id == -1 and d is WeaponData:
-			%EligibleStashList.add_item("%s (Qty: %d)" % [d.item_name, inv_item.quantity])
+			# This line inside your equipment_tab.gd automatically draws the values:
+			%EligibleStashList.add_item("%s [%d/%d]" % [d.item_name, inv_item.current_durability, d.base_durability])
 			%EligibleStashList.set_item_metadata(%EligibleStashList.item_count - 1, inv_item.item_id)
 		elif slot_id >= 0 and d is ArmorData and d.armor_type == slot_id:
-			%EligibleStashList.add_item("%s (Qty: %d)" % [d.item_name, inv_item.quantity])
+			# This line inside your equipment_tab.gd automatically draws the values:
+			%EligibleStashList.add_item("%s [%d/%d]" % [d.item_name, inv_item.current_durability, d.base_durability])
 			%EligibleStashList.set_item_metadata(%EligibleStashList.item_count - 1, inv_item.item_id)
 
 

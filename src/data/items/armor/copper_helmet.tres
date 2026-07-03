@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ArmorData" format=3 uid="uid://cthcsbxerwnvx"]
+
+[ext_resource type="Script" uid="uid://c2xbu5ex36046" path="res://src/data/classes/item_data/armor_data.gd" id="1_ilnja"]
+[ext_resource type="Texture2D" uid="uid://52ur0gv6g25p" path="res://assets/textures/test/empty_debug_texture.png" id="1_qvvmr"]
+
+[resource]
+script = ExtResource("1_ilnja")
+item_name = "ITEM_COPPER_HELMET_NAME"
+lore_description = "ITEM_COPPER_HELMET_DESC"
+icon = ExtResource("1_qvvmr")
+base_cost = 65
+weight = 2.5
+base_durability = 200
+metadata/_custom_type_script = "uid://c2xbu5ex36046"

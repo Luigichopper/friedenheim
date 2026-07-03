@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ArmorData" format=3 uid="uid://q2gekpkotdmt"]
+
+[ext_resource type="Script" uid="uid://c2xbu5ex36046" path="res://src/data/classes/item_data/armor_data.gd" id="1_b3too"]
+[ext_resource type="Texture2D" uid="uid://52ur0gv6g25p" path="res://assets/textures/test/empty_debug_texture.png" id="1_gnlut"]
+
+[resource]
+script = ExtResource("1_b3too")
+armor_type = 2
+item_name = "ITEM_COPPER_LEGGINGS_NAME"
+lore_description = "ITEM_COPPER_LEGGINGS_DESC"
+icon = ExtResource("1_gnlut")
+base_cost = 100
+weight = 4.0
+base_durability = 225
+metadata/_custom_type_script = "uid://c2xbu5ex36046"
