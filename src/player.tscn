@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cxgoffltpo1kk"]
+
+[ext_resource type="Script" uid="uid://bhvtgq56newmn" path="res://player.gd" id="1_lowyb"]
+[ext_resource type="Texture2D" uid="uid://cp0hlcghj4c4x" path="res://assets/textures/test/lembas.png" id="2_ehvfd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihbif"]
+
+[node name="Player" type="CharacterBody2D" unique_id=780665977]
+script = ExtResource("1_lowyb")
+
+[node name="PlayerSprite" type="Sprite2D" parent="." unique_id=1220282919]
+texture = ExtResource("2_ehvfd")
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="." unique_id=1257039632]
+shape = SubResource("RectangleShape2D_ihbif")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1400792357]
+zoom = Vector2(5, 5)
+position_smoothing_enabled = true
+position_smoothing_speed = 4.0
